@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "GestorEmpresas",
-    "dateExported": "2024-03-03T03:13:14.997Z",
+    "dateExported": "2024-03-03T21:55:51.040Z",
     "version": "1.1",
     "folders": [
         {
@@ -302,11 +302,11 @@
             "method": "POST",
             "sortNum": 120000,
             "created": "2024-03-03T01:26:59.046Z",
-            "modified": "2024-03-03T02:19:55.561Z",
+            "modified": "2024-03-03T21:51:08.463Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NTAxNDIyLCJleHAiOjE3MDk1MTIyMjJ9.YAe6ZF0_VFGaZqL54-Zay61bfmMTNXEm6o_0ZscWKmg"
                 }
             ],
             "params": [],
@@ -478,6 +478,25 @@
                     }
                 ]
             },
+            "tests": []
+        },
+        {
+            "_id": "a7732bc1-1a8a-42e1-95a1-72ccb17b8d92",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "createExcel",
+            "url": "/company/createExcel",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-03-03T17:41:29.134Z",
+            "modified": "2024-03-03T21:30:32.448Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NTAxNDIyLCJleHAiOjE3MDk1MTIyMjJ9.YAe6ZF0_VFGaZqL54-Zay61bfmMTNXEm6o_0ZscWKmg"
+                }
+            ],
+            "params": [],
             "tests": []
         }
     ],

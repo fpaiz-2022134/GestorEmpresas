@@ -175,7 +175,7 @@ export const createExcel = async(req, res) => {
 
         // Loop through companies and populate rows
 
-        companies.forEach(async (company, index) => {
+        companies.forEach((company, index) => {
             
             ws.cell(index + 2, 1).string(company.name).style(style)
             ws.cell(index + 2, 2).string(company.address).style(style)
@@ -183,22 +183,14 @@ export const createExcel = async(req, res) => {
             ws.cell(index + 2, 4).string(company.email).style(style)
             ws.cell(index + 2, 5).string(company.impactLevel ? company.impactLevel.toString() : '' ).style(style) 
             ws.cell(index + 2, 6).string(company.yearsInBussiness ? company.yearsInBussiness.toString() : '').style(style)
-            ws.cell(index + 2, 7).string(JSON.stringify(company.bussinessCategory)).style(style) 
-             /* let category = await Category.find({_id: company.bussinessCategory});
+            ws.cell(index + 2, 7).string(JSON.stringify(company.bussinessCategory)).style(style)  
+           /*  
+            Nota: Intente mostrar solo el nombre en la siguientes sentencias, pero no obtiene el dato.
+           let category = await Category.findById(company.bussinessCategory);
             console.log(category)
-            ws.cell(index + 2, 7).string(category.title).style(style)   */
+            let categoryTitle = category.title;
+            ws.cell(index + 2, 7).string(categoryTitle).style(style)  */
           });
-
-       /* companies.forEach((company, index) => {
-            ws.cell(index + 2, 1).string(company.name).style(style)
-            ws.cell(index + 2, 2).string(company.address).style(style)
-            ws.cell(index + 2, 3).string(company.phone).style(style)
-            ws.cell(index + 2, 4).string(company.email).style(style)
-            ws.cell(index + 2, 5).string(company.impactLevel ? company.impactLevel.toString() : '' ).style(style) 
-            ws.cell(index + 2, 6).string(company.yearsInBussiness ? company.yearsInBussiness.toString() : '').style(style)
-            ws.cell(index + 2, 7).string(JSON.stringify(company.bussinessCategory)).style(style)
-             ws.cell(index + 2, 7).string(JSON.stringify(company.bussinessCategory)).style(style) 
-        });*/
 
         /*  for (let i = 2; i < companies.length; i++) {
             let category = await Category.findById(companies.bussinessCategory)
@@ -207,17 +199,6 @@ export const createExcel = async(req, res) => {
             
         }  */
 
-
-        /* companies.forEach((company, index) => {
-            ws.cell(index + 2, 1).string(company.name).style(style)
-            ws.cell(index + 2, 2).string(company.address).style(style)
-            ws.cell(index + 2, 3).string(company.phone).style(style)
-            ws.cell(index + 2, 4).string(company.email).style(style)
-            ws.cell(index + 2, 5).string(company.impactLevel).style(style)
-            ws.cell(index + 2, 6).string(company.yearsInBussiness).style(style)
-            ws.cell(index + 2, 7).string(company.bussinessCategory).style(style)
-        })
- */
 
         ws.column(1).setWidth(30)
         ws.column(2).setWidth(30)
