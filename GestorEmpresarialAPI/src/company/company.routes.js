@@ -12,6 +12,7 @@ import {
     companiesByCategory,
     companiesByYears,
     companiesZA,
+    createExcel,
     getAllCompanies,
     updateCompany
 } from './company.controller.js'
@@ -25,4 +26,5 @@ api.get('/companiesByCategory', [validateJwt], companiesByCategory)
 api.get('/companiesAZ', [validateJwt], companiesAZ)
 api.get('/companiesZA', [validateJwt], companiesZA)
 api.put('/updateCompany/:id', [validateJwt], updateCompany)
+api.get('/createExcel', [validateJwt], createExcel)
 export default api
