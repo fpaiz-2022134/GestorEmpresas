@@ -1,0 +1,489 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorEmpresas",
+    "dateExported": "2024-03-03T03:13:14.997Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "admin",
+            "containerId": "",
+            "created": "2024-03-02T22:49:49.325Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "company",
+            "containerId": "",
+            "created": "2024-03-02T22:49:57.660Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "1a200ba6-a207-4124-ad48-990813edf089",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-02T22:50:03.580Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2587e9c1-22c7-4898-a22a-d6ba482b5da6",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "test",
+            "url": "/admin/test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-02T22:51:56.516Z",
+            "modified": "2024-03-02T22:52:03.146Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1629c1cc-cb0f-4f70-b047-468f654c9d70",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "register",
+            "url": "/admin/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T23:57:12.528Z",
+            "modified": "2024-03-03T00:27:54.470Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Franco"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Paiz"
+                    },
+                    {
+                        "name": "email",
+                        "value": "fralpaiz@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "fpaiz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "22334455"
+                    },
+                    {
+                        "name": "address",
+                        "value": "Villa Nueva, Guatemala"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b7d8f198-069f-4805-a0a9-c73840923eea",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "login",
+            "url": "/admin/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-02T23:57:27.693Z",
+            "modified": "2024-03-03T00:25:49.885Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "fpaiz",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "fralpaiz@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "38f4a97d-6245-44c3-a87b-781f0dcccd3b",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "getAdmins",
+            "url": "/admin/getAdmins",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-02T23:57:32.995Z",
+            "modified": "2024-03-03T00:21:26.223Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzFmOGI5NDY2MDc4ZmFjYjU0ZjMiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1MjU0LCJleHAiOjE3MDk0MzYwNTR9.Mu_o8mwt3GCNaFD1xO93fTNgcvRRsK6Cr4oBT2jqOww"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4b772eaf-2f14-4d63-9228-539a97829c8e",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "updateAdmin",
+            "url": "/admin/updateAdmin/65e3c1f8b9466078facb54f3",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-02T23:57:41.587Z",
+            "modified": "2024-03-03T00:22:45.656Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzFmOGI5NDY2MDc4ZmFjYjU0ZjMiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1MjU0LCJleHAiOjE3MDk0MzYwNTR9.Mu_o8mwt3GCNaFD1xO93fTNgcvRRsK6Cr4oBT2jqOww"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Franco Alejandro"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Paiz González"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f177eb16-a96a-4b8a-ac24-f75958fed4e1",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "869aca69-91a3-4963-83ce-12f759913dea",
+            "name": "deleteAdmin",
+            "url": "/admin/deleteAdmin/65e3c378b4910d720c535f0a",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-02T23:57:54.085Z",
+            "modified": "2024-03-03T00:28:19.494Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f1c09cb-d80d-4a6c-b97d-460a3216d399",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "1a200ba6-a207-4124-ad48-990813edf089",
+            "name": "addCategory",
+            "url": "/category/addCategory",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-03T00:48:46.329Z",
+            "modified": "2024-03-03T02:18:11.278Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Hardware"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Equipo de computo físico."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dddd2d51-4be7-46ea-8101-c33dece1cd56",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "1a200ba6-a207-4124-ad48-990813edf089",
+            "name": "getCategories",
+            "url": "/category/getCategories",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-03T00:53:40.365Z",
+            "modified": "2024-03-03T00:53:58.298Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "599d648f-d70a-4c4c-bced-c78f8b31b3d6",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "1a200ba6-a207-4124-ad48-990813edf089",
+            "name": "updateCategory",
+            "url": "/category/updateCategory/65e3c9d757d46ffb220850fe",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-03T00:54:11.857Z",
+            "modified": "2024-03-03T00:55:59.741Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Programas y sistemas informáticos."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9279693d-6a89-427c-bfda-eaf4b04f561b",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "1a200ba6-a207-4124-ad48-990813edf089",
+            "name": "deleteCategory",
+            "url": "/category/deleteCategory/65e3cae857d46ffb22085106",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-03T00:56:14.776Z",
+            "modified": "2024-03-03T00:57:39.191Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b7b29348-0ec1-4305-aa32-9182c0fc4e16",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "addCompany",
+            "url": "/company/addCompany",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-03T01:26:59.046Z",
+            "modified": "2024-03-03T02:19:55.561Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Intelaf"
+                    },
+                    {
+                        "name": "address",
+                        "value": "Santa Clara, Villa Nueva."
+                    },
+                    {
+                        "name": "phone",
+                        "value": "09098888"
+                    },
+                    {
+                        "name": "email",
+                        "value": "intelaf@gmail.com"
+                    },
+                    {
+                        "name": "impactLevel",
+                        "value": "30"
+                    },
+                    {
+                        "name": "yearsInBussiness",
+                        "value": "25"
+                    },
+                    {
+                        "name": "bussinessCategory",
+                        "value": "65e3dde35abde025ba29732d"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff5a1551-5863-4f62-a09b-fc0acb4cccae",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "getAllCompanies",
+            "url": "/company/getAllCompanies",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-03T01:51:14.052Z",
+            "modified": "2024-03-03T01:53:45.178Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8fde189e-84e3-4151-83a2-9d0c9b54f14c",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "companiesByYears",
+            "url": "/company/companiesByYears",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-03T01:54:01.633Z",
+            "modified": "2024-03-03T01:55:57.788Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2a0c734d-6820-431b-abac-dfceba2379c8",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "companiesByCategory",
+            "url": "/company/companiesByCategory",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-03T02:08:22.124Z",
+            "modified": "2024-03-03T02:22:39.284Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "bussinessCategory",
+                        "value": "65e3dde35abde025ba29732d"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9ccffbe-266a-417a-8a13-c966ba72fcad",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "companiesAZ",
+            "url": "/company/companiesAZ",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-03T02:30:38.203Z",
+            "modified": "2024-03-03T02:31:33.975Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3a86a325-cf4d-4e32-8201-efd3074e302a",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "companiesZA",
+            "url": "/company/companiesZA",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-03-03T02:32:18.459Z",
+            "modified": "2024-03-03T02:32:43.942Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "40e11c1b-0986-49fd-942c-cae8ead8319d",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "updateCompany",
+            "url": "/company/updateCompany/65e3deb0e4a10f39b8f2d877",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2024-03-03T03:05:44.547Z",
+            "modified": "2024-03-03T03:09:36.681Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NDI1NjgxLCJleHAiOjE3MDk0MzY0ODF9.HVwyS3W8AvKuz13M-bGFAnkuU5hss2poChtZvKeKoZ0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Tienda Kemik "
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
