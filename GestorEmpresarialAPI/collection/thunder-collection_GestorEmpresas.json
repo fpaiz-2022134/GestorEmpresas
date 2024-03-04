@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "GestorEmpresas",
-    "dateExported": "2024-03-03T21:55:51.040Z",
+    "dateExported": "2024-03-04T00:54:44.549Z",
     "version": "1.1",
     "folders": [
         {
@@ -494,6 +494,25 @@
                 {
                     "name": "token",
                     "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NTAxNDIyLCJleHAiOjE3MDk1MTIyMjJ9.YAe6ZF0_VFGaZqL54-Zay61bfmMTNXEm6o_0ZscWKmg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "186202d0-eaa8-4c42-91a6-b55c72e066c1",
+            "colId": "907f2437-ed87-4b0d-acf4-a0e618bca95b",
+            "containerId": "14e767ee-021e-483a-9534-cf95105c12a0",
+            "name": "createReport",
+            "url": "/company/createReport",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-03-04T00:23:59.052Z",
+            "modified": "2024-03-04T00:25:06.478Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYzQwYWI0OTEwZDcyMGM1MzVmMTAiLCJ1c2VybmFtZSI6ImZwYWl6IiwibmFtZSI6IkZyYW5jbyIsImVtYWlsIjoiZnJhbHBhaXpAZ21haWwuY29tIiwiaWF0IjoxNzA5NTExODk2LCJleHAiOjE3MDk1MjI2OTZ9.YhpJ1j7Lyloimjhuo0ceorYnUIPMosAk5kzuHknJMYM"
                 }
             ],
             "params": [],

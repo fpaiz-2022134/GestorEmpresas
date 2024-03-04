@@ -5,6 +5,7 @@ import Company from './company.model.js'
 import { checkUpdate } from '../utils/validator.js'
 import Category from '../category/category.model.js'
 
+import XlsxPopulate from 'xlsx-populate';
 
 export const addCompany = async (req, res) => {
     try {
@@ -121,9 +122,14 @@ export const updateCompany = async (req, res) => {
     }
 }
 
+
+//-------------------------- REPORT #1
+//USE THIS FUNCTION TO CREATE A EXCEL, IT DOESN'T SHOWS THE CATEGORY 
+//THE ANOTHER NEXT FUNCTION SHOW ALL COMPLETE INFORMATION. "CREATEREPORT" #2
 import xl from 'excel4node'
 import path from 'path'
 import { fileURLToPath } from 'url'
+
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -232,4 +238,47 @@ export const createExcel = async(req, res) => {
 
 }
 
+//---------------------------# REPORT 2
+//USE THIS FUNCTION TO CREATE THE REPORT
+//IT HAS THE NECESSARY INFORMATION INCLUDING THE CATEGORY
+
+export const createReport = async (req, res) => {
+    try {
+        let report = await XlsxPopulate.fromBlankAsync();
+        let companies = await Company.find().populate({
+            path: 'bussinessCategory',
+            select: 'title'
+        });
+        let data = companies.map(company => [
+            company.name,
+            company.address,
+            company.phone,
+            company.email,
+            company.impactLevel,
+            company.yearsInBussiness,
+            company.bussinessCategory.title
+        ]);
+        report.sheet(0).cell('A1').value('Name');
+        report.sheet(0).cell('B1').value('Address');
+        report.sheet(0).cell('C1').value('Phone');
+        report.sheet(0).cell('D1').value('Email');
+        report.sheet(0).cell('E1').value('Impact Level');
+        report.sheet(0).cell('F1').value('Years In Business');
+        report.sheet(0).cell('G1').value('Business Category');
+
+        report.sheet(0).cell('A2').value(data);
+
+        // Set the width of all columns to 30
+        for (let i = 0; i < 7; i++) {
+            report.sheet(0).column(i + 1).width(30);
+        }
+
+        await report.toFileAsync('./src/reports/report.xlsx'); // Add 'await' here
+        return res.send({ message: 'The report has been created successfully.' });
+
+    } catch (err) {
+        console.error(err);
+        return res.status(500).send({ message: 'Error creating the report' });
+    }
+};
 
